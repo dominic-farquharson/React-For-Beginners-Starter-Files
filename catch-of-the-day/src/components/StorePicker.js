@@ -18,8 +18,10 @@ class StorePicker extends React.Component {
     event.preventDefault();
     console.log('you changed the URL');
     // first grab text from the box. Need to map this to method it's called in.
-    console.log(this.storeInput.value);
+    const storeId = this.storeInput.value;
+    console.log(`Going to ${storeId}`);
     // Second, transition from root to other directories.
+    this.context.router.transitionTo(`/store/${storeId}`);
   }
 
   render() {
@@ -35,6 +37,10 @@ class StorePicker extends React.Component {
 
     )
   }
+}
+
+StorePicker.contextTypes = {
+  router: React.PropTypes.object
 }
 
 export default StorePicker;
