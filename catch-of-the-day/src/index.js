@@ -1,7 +1,7 @@
 import React from 'react';
 //importing render method
 import { render } from 'react-dom';
-
+import './css/style.css';
 import StorePicker from './components/StorePicker';
 
 render(
