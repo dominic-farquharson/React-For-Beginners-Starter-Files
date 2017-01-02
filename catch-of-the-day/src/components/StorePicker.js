@@ -5,7 +5,17 @@ import React from 'react';
 class StorePicker extends React.Component {
   //every component needs Render method
   render() {
-    return <p>Hello</p>
+    //can only return one parent element
+    return (
+
+      <form className="store">
+        {/* JSX Comment */}
+        <h2>Please Enter A Store</h2>
+        <input type="text" required placeholder="Store Name" />
+        <button type="submit">Visit Store 	&rarr;</button>
+      </form>
+
+    )
   }
 }
 
