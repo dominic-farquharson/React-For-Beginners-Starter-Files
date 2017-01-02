@@ -8,7 +8,7 @@ class StorePicker extends React.Component {
     //can only return one parent element
     return (
 
-      <form className="store">
+      <form className="store-selector">
         {/* JSX Comment */}
         <h2>Please Enter A Store</h2>
         <input type="text" required placeholder="Store Name" />
