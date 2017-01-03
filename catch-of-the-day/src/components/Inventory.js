@@ -19,6 +19,14 @@ class Inventory extends React.Component {
     console.log(updatedFish)
   }
 
+  renderLogin() {
+    return(
+      <nav className='login'>
+        <h2>Inventory</h2>
+      </nav>
+    )
+  }
+
 
   renderInventory(key) {
     const fish = this.props.fishes[key];
